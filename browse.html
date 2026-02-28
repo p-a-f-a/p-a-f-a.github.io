@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Footage - PAFA</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div id="top-bar">
+    <span>PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE &nbsp;|&nbsp; Est. 2026 &nbsp;|&nbsp; Original law enforcement footage &mdash; sourced, reviewed &amp; published by PAFA</span>
+  </div>
+
+  <div id="header">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td id="header-logo">
+          <img src="seal.png" alt="[SEAL]" width="80" height="80" onerror="this.style.display='none'" />
+          <div id="header-title">
+            <h1>PUBLIC ACCOUNTABILITY<br />FOOTAGE ARCHIVE</h1>
+            <p class="header-sub">PAFA &mdash; Unofficial Public Record Repository</p>
+          </div>
+        </td>
+        <td id="header-right" valign="bottom">
+          <p class="header-date">Last Updated: <span id="last-updated"></span></p>
+          <p class="header-date">Total Records: <strong id="total-count">0</strong></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html">[ HOME ]</a></li>
+      <li><a href="browse.html" class="nav-active">[ BROWSE FOOTAGE ]</a></li>
+      <li><a href="about.html">[ ABOUT / DISCLAIMER ]</a></li>
+    </ul>
+  </div>
+
+  <div id="alert-banner">
+    <strong>&#9888; NOTICE:</strong> This archive contains links to real footage depicting law enforcement activity,
+    incidents, and surveillance recordings. Some content may be disturbing. Viewer discretion is advised.
+  </div>
+
+  <!-- STORAGE WARNING -->
+  <div id="storage-warning-banner">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="28" align="center" valign="top" style="font-size:18px;">&#128190;</td>
+      <td>
+        <strong>SERVER STORAGE NOTICE:</strong>
+        Body cam footage links are subject to server-side deletion once footage is uploaded/archived to save space.
+        Links &mdash; especially body camera recordings &mdash; <strong>may be permanently removed without advance notice</strong>.
+        Download or save any footage of interest <strong>immediately</strong>. PAFA is not responsible for expired links.
+        &nbsp;<a href="index.html#notify-section" style="color:#003366; font-weight:bold;">Subscribe to new footage alerts &raquo;</a>
+      </td>
+    </tr></table>
+  </div>
+
+  <div id="main-wrapper">
+    <table width="100%" cellpadding="0" cellspacing="10" border="0">
+      <tr valign="top">
+
+        <!-- LEFT SIDEBAR -->
+        <td id="left-sidebar" width="200">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">FILTER BY CATEGORY</div>
+            <ul class="sidebar-list">
+              <li><a href="browse.html">&#187; All Categories</a></li>
+              <li><a href="browse.html?cat=bodycam">&#187; Body Camera</a></li>
+              <li><a href="browse.html?cat=police">&#187; Police Footage</a></li>
+              <li><a href="browse.html?cat=cctv">&#187; CCTV / Surveillance</a></li>
+              <li><a href="browse.html?cat=dashcam">&#187; Dash Camera</a></li>
+              <li><a href="browse.html?cat=bystander">&#187; Bystander Recording</a></li>
+              <li><a href="browse.html?cat=helicopter">&#187; Helicopter / Aerial</a></li>
+              <li><a href="browse.html?cat=courtroom">&#187; Courtroom Footage</a></li>
+              <li><a href="browse.html?cat=other">&#187; Other / Misc.</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">QUICK STATS</div>
+            <table class="stats-table" width="100%" cellpadding="3" cellspacing="0" border="1">
+              <tr><td>Total Records</td><td id="stat-total">56</td></tr>
+              <tr><td>Body Cam</td><td id="stat-bodycam">18</td></tr>
+              <tr><td>Police</td><td id="stat-police">9</td></tr>
+              <tr><td>CCTV</td><td id="stat-cctv">14</td></tr>
+              <tr><td>Dash Cam</td><td id="stat-dashcam">6</td></tr>
+              <tr><td>Bystander</td><td id="stat-bystander">5</td></tr>
+              <tr><td>Other</td><td id="stat-other">4</td></tr>
+              <tr style="background:#fffbe6;"><td colspan="2" style="font-size:9px;color:#886600;">&#9888; Some records temporarily unavailable. Server maintenance in progress.</td></tr>
+            </table>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">SORT OPTIONS</div>
+            <ul class="sidebar-list">
+              <li><a href="#" onclick="setSortAndRender('newest'); return false;">&#187; Newest First</a></li>
+              <li><a href="#" onclick="setSortAndRender('oldest'); return false;">&#187; Oldest First</a></li>
+              <li><a href="#" onclick="setSortAndRender('az'); return false;">&#187; Title A-Z</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">ACTIONS</div>
+            <ul class="sidebar-list">
+              <li><a href="index.html">&#187; Return Home</a></li>
+              <li><a href="about.html">&#187; About / Policy</a></li>
+              <li><a href="index.html#donate-section">&#187; &#9829; Donate to PAFA</a></li>
+            </ul>
+          </div>
+
+        </td>
+
+        <!-- MAIN CONTENT AREA -->
+        <td id="content-area">
+
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> &raquo; Browse Footage
+          </div>
+
+          <h2 class="section-title">BROWSE FOOTAGE ARCHIVE</h2>
+          <hr class="section-hr" />
+
+          <!-- FILTER / SEARCH BAR -->
+          <div id="filter-bar">
+            <table cellpadding="4" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <label for="filter-cat">Category:</label>
+                  <select id="filter-cat" name="cat">
+                    <option value="">-- All --</option>
+                    <option value="bodycam">Body Camera</option>
+                    <option value="police">Police Footage</option>
+                    <option value="cctv">CCTV / Surveillance</option>
+                    <option value="dashcam">Dash Camera</option>
+                    <option value="bystander">Bystander Recording</option>
+                    <option value="helicopter">Helicopter / Aerial</option>
+                    <option value="courtroom">Courtroom Footage</option>
+                    <option value="other">Other / Misc.</option>
+                  </select>
+                </td>
+                <td>
+                  <label for="filter-search">Search:</label>
+                  <input type="text" id="filter-search" placeholder="Keywords..." style="width:180px;" />
+                </td>
+                <td>
+                  <label for="filter-sort">Sort:</label>
+                  <select id="filter-sort" name="sort">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="az">Title A-Z</option>
+                  </select>
+                </td>
+                <td>
+                  <button onclick="applyFiltersAndRender()">APPLY FILTER</button>
+                  &nbsp;
+                  <button onclick="clearFilters()">CLEAR</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="results-bar" id="results-bar">
+            Showing <strong id="results-count">0</strong> record(s)
+            <span id="results-filter-info"></span>
+          </div>
+
+          <!-- ENTRIES -->
+          <div id="browse-list">
+            <p class="no-entries">No records found in this category. PAFA publishes new records periodically. <a href="index.html">Return home &raquo;</a></p>
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="pagination" id="pagination"></div>
+
+        </td>
+
+        <!-- RIGHT SIDEBAR -->
+        <td id="right-sidebar" width="180">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">SEARCH</div>
+            <form onsubmit="doSearch(event)">
+              <input type="text" id="search-box" placeholder="Search footage..." /><br />
+              <input type="submit" value="SEARCH" class="btn-search" />
+            </form>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">LEGEND</div>
+            <table width="100%" cellpadding="3" cellspacing="0" border="0">
+              <tr><td><span class="footage-entry-cat cat-bodycam">BODY CAM</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-police">POLICE</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-cctv">CCTV</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-dashcam">DASH CAM</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-bystander">BYSTANDER</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-helicopter">AERIAL/HELI</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-courtroom">COURTROOM</span></td></tr>
+              <tr><td><span class="footage-entry-cat cat-other">OTHER</span></td></tr>
+            </table>
+          </div>
+
+          <div class="sidebar-box sidebar-warning">
+            <div class="sidebar-title">&#9888; CONTENT WARNING</div>
+            <p class="sidebar-text">
+              Footage in this archive may depict graphic violence, death, injuries, arrests, and other disturbing material.
+              You must be 18 or older to browse this archive.
+            </p>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="footer">
+    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+      <tr>
+        <td>
+          <p>
+            PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE (PAFA) &mdash;
+            Not affiliated with any government agency or law enforcement body. &mdash;
+            All video content belongs to respective copyright holders.
+          </p>
+          <p>
+            [ <a href="index.html">Home</a> ] &nbsp;
+            [ <a href="browse.html">Browse</a> ] &nbsp;
+            [ <a href="about.html">About</a> ] &nbsp;
+            [ <a href="about.html#disclaimer">Disclaimer</a> ]
+          </p>
+          <p class="footer-small">
+            Best viewed in 1024x768 resolution or higher. &nbsp;|&nbsp;
+            Page generated: <span id="footer-date"></span>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US');
+    document.getElementById('footer-date').textContent = new Date().toUTCString();
+
+    var currentSort = 'newest';
+    var currentPage = 1;
+    var itemsPerPage = 15;
+
+    function setSortAndRender(s) {
+      currentSort = s;
+      document.getElementById('filter-sort').value = s;
+      renderBrowsePage();
+    }
+
+    function doSearch(e) {
+      e.preventDefault();
+      var q = document.getElementById('search-box').value;
+      document.getElementById('filter-search').value = q;
+      applyFiltersAndRender();
+    }
+
+    function applyFiltersAndRender() {
+      currentPage = 1;
+      renderBrowsePage();
+    }
+
+    function clearFilters() {
+      document.getElementById('filter-cat').value = '';
+      document.getElementById('filter-search').value = '';
+      document.getElementById('filter-sort').value = 'newest';
+      currentSort = 'newest';
+      currentPage = 1;
+      renderBrowsePage();
+    }
+
+    // On load — check URL params
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var cat = params.get('cat') || '';
+      var q   = params.get('q') || '';
+      if (cat) document.getElementById('filter-cat').value = cat;
+      if (q)   document.getElementById('filter-search').value = q;
+      renderBrowsePage();
+      updateStats();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Footage Link - PAFA</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div id="top-bar">
+    <span>PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE &nbsp;|&nbsp; Est. 2026 &nbsp;|&nbsp; Original law enforcement footage &mdash; sourced, reviewed &amp; published by PAFA</span>
+  </div>
+
+  <div id="header">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td id="header-logo">
+          <img src="seal.png" alt="[SEAL]" width="80" height="80" onerror="this.style.display='none'" />
+          <div id="header-title">
+            <h1>PUBLIC ACCOUNTABILITY<br />FOOTAGE ARCHIVE</h1>
+            <p class="header-sub">PAFA &mdash; Unofficial Public Record Repository</p>
+          </div>
+        </td>
+        <td id="header-right" valign="bottom">
+          <p class="header-date">Last Updated: <span id="last-updated"></span></p>
+          <p class="header-date">Total Records: <strong id="total-count">0</strong></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html">[ HOME ]</a></li>
+      <li><a href="browse.html">[ BROWSE FOOTAGE ]</a></li>
+      <li><a href="about.html">[ ABOUT / DISCLAIMER ]</a></li>
+    </ul>
+  </div>
+
+  <div id="alert-banner" style="background:#cc0000;color:#fff;font-weight:bold;">
+    &#9888; PUBLIC SUBMISSIONS ARE NOT ACCEPTED &mdash; This page is restricted to PAFA administration. All content in this archive is original PAFA-sourced footage.
+  </div>
+
+  <!-- STORAGE WARNING -->
+  <div id="storage-warning-banner">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="28" align="center" valign="top" style="font-size:18px;">&#128190;</td>
+      <td>
+        <strong>NOTICE:</strong> Body cam and police footage links may be removed from source servers shortly after upload to save storage space.
+        <strong>Download footage immediately while available.</strong>
+        Some footage &mdash; particularly body camera recordings &mdash; may have portions
+        <strong>blurred or redacted by the original releasing agency</strong> for security or compliance purposes.
+      </td>
+    </tr></table>
+  </div>
+
+  <div id="main-wrapper">
+    <table width="100%" cellpadding="0" cellspacing="10" border="0">
+      <tr valign="top">
+
+        <!-- LEFT SIDEBAR -->
+        <td id="left-sidebar" width="200">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">PAFA SOURCES</div>
+            <ul class="sidebar-list">
+              <li>&#10003; Official agency releases</li>
+              <li>&#10003; FOIA productions</li>
+              <li>&#10003; Public records</li>
+              <li>&#10003; Authorized distributions</li>
+              <li>&#10003; Verified news media</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box sidebar-warning">
+            <div class="sidebar-title">ACCESS RESTRICTED</div>
+            <p class="sidebar-text">
+              Record publication is restricted to PAFA administration. Public submissions are not accepted.
+            </p>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">CATEGORIES</div>
+            <ul class="sidebar-list">
+              <li>Body Camera</li>
+              <li>Police Footage</li>
+              <li>CCTV / Surveillance</li>
+              <li>Dash Camera</li>
+              <li>Bystander Recording</li>
+              <li>Helicopter / Aerial</li>
+              <li>Courtroom Footage</li>
+              <li>Other / Misc.</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box sidebar-warning">
+            <div class="sidebar-title">&#9888; WARNING</div>
+            <p class="sidebar-text">
+              False submissions or submissions intended to harass, doxx, or harm individuals
+              are prohibited and may result in removal.
+            </p>
+          </div>
+
+        </td>
+
+        <!-- MAIN CONTENT AREA -->
+        <td id="content-area">
+
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> &raquo; Access Restricted
+          </div>
+
+          <h2 class="section-title">ACCESS RESTRICTED &mdash; PAFA ADMINISTRATION ONLY</h2>
+          <hr class="section-hr" />
+
+          <div class="unavailable-block" style="margin:20px 0;">
+            <div class="unavailable-head">&#9888; PUBLIC SUBMISSIONS NOT ACCEPTED</div>
+            <div class="unavailable-body">
+              <p>
+                This page is restricted to PAFA administration. Public submissions to this archive are
+                <strong>not accepted</strong>. All footage records are sourced, reviewed, and published
+                exclusively by the PAFA group.
+              </p>
+              <p>
+                PAFA publishes <strong>original law enforcement footage</strong> obtained through official
+                agency releases, FOIA productions, and authorized public distributions. No user-submitted
+                content is accepted or published.
+              </p>
+              <p>
+                If you wish to report an issue with an existing record, use the <strong>Report</strong> function
+                on the relevant entry card in the archive.
+              </p>
+              <p style="margin-top:16px;">
+                <a href="browse.html"><strong>[&nbsp;BROWSE THE ARCHIVE &raquo;&nbsp;]</strong></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="index.html">[&nbsp;RETURN HOME &raquo;&nbsp;]</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- SUCCESS MESSAGE (unused — admin only page) -->
+          <div class="msg-success" id="msg-success" style="display:none;">
+            <strong>&#10003; RECORD PUBLISHED</strong><br />
+            The record has been added to the archive.
+            <a href="browse.html">Browse the archive</a>.
+          </div>
+
+          <!-- ERROR MESSAGE (unused — admin only page) -->
+          <div class="msg-error" id="msg-error" style="display:none;">
+            <strong>&#10007; ERROR</strong><br />
+            <span id="error-text">An error occurred.</span>
+          </div>
+
+          <div class="form-wrapper">
+
+            <form id="submit-form" onsubmit="handleSubmit(event)" novalidate="novalidate">
+
+              <!-- FOOTAGE IDENTIFICATION -->
+              <div class="form-section-title">SECTION 1 &mdash; FOOTAGE IDENTIFICATION</div>
+
+              <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="label-col">Title <span class="required">*</span></td>
+                  <td>
+                    <input type="text" id="f-title" name="title" class="form-input"
+                           placeholder="e.g., LAPD Body Camera Footage - Officer Traffic Stop 2024"
+                           maxlength="200" />
+                    <span class="form-hint">Short descriptive title for this footage entry (max 200 chars)</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Category <span class="required">*</span></td>
+                  <td>
+                    <select id="f-cat" name="category" class="form-select">
+                      <option value="">-- Select a Category --</option>
+                      <option value="bodycam">Body Camera</option>
+                      <option value="police">Police Footage</option>
+                      <option value="cctv">CCTV / Surveillance</option>
+                      <option value="dashcam">Dash Camera</option>
+                      <option value="bystander">Bystander Recording</option>
+                      <option value="helicopter">Helicopter / Aerial</option>
+                      <option value="courtroom">Courtroom Footage</option>
+                      <option value="other">Other / Misc.</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Footage URL <span class="required">*</span></td>
+                  <td>
+                    <input type="url" id="f-url" name="url" class="form-input"
+                           placeholder="https://www.youtube.com/watch?v=..." />
+                    <span class="form-hint">Full URL to the publicly accessible video</span>
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- INCIDENT DETAILS -->
+              <div class="form-section-title">SECTION 2 &mdash; INCIDENT DETAILS</div>
+
+              <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="label-col">Incident Date</td>
+                  <td>
+                    <input type="date" id="f-incident-date" name="incident_date" class="form-input" style="width:200px;" />
+                    <span class="form-hint">Date the incident in the footage occurred (if known)</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Location</td>
+                  <td>
+                    <input type="text" id="f-location" name="location" class="form-input"
+                           placeholder="e.g., Los Angeles, CA / Chicago, IL / Unknown"
+                           maxlength="200" />
+                    <span class="form-hint">City, state, country, or general location of the incident</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Agency / Department</td>
+                  <td>
+                    <input type="text" id="f-agency" name="agency" class="form-input"
+                           placeholder="e.g., LAPD, Chicago PD, Unknown, N/A"
+                           maxlength="200" />
+                    <span class="form-hint">Law enforcement agency or department involved (if applicable)</span>
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- SOURCE INFORMATION -->
+              <div class="form-section-title">SECTION 3 &mdash; SOURCE INFORMATION</div>
+
+              <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="label-col">Video Platform <span class="required">*</span></td>
+                  <td>
+                    <select id="f-platform" name="platform" class="form-select">
+                      <option value="">-- Select Platform --</option>
+                      <option value="YouTube">YouTube</option>
+                      <option value="Vimeo">Vimeo</option>
+                      <option value="Rumble">Rumble</option>
+                      <option value="LiveLeak/Itemfix">LiveLeak / Itemfix</option>
+                      <option value="Twitter/X">Twitter / X</option>
+                      <option value="Reddit">Reddit</option>
+                      <option value="Direct Link">Direct Link (.mp4 / other)</option>
+                      <option value="News Site">News Media Website</option>
+                      <option value="Archive.org">Archive.org</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Original Source</td>
+                  <td>
+                    <input type="text" id="f-source" name="source" class="form-input"
+                           placeholder="e.g., ABC News, FOIA Request, Official Dept. Release"
+                           maxlength="200" />
+                    <span class="form-hint">Where this footage originally came from (news station, FOIA, official release, etc.)</span>
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- DESCRIPTION -->
+              <div class="form-section-title">SECTION 4 &mdash; DESCRIPTION &amp; NOTES</div>
+
+              <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="label-col">Description <span class="required">*</span></td>
+                  <td>
+                    <textarea id="f-desc" name="description" class="form-textarea" rows="6"
+                              placeholder="Describe the footage: what is shown, context of the incident, who is involved (agencies/departments only, not private individuals), significance of the footage, etc."
+                              maxlength="2000"></textarea>
+                    <span class="form-hint">Min 20 characters. Do not include personal info of private citizens. Max 2000 chars.</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="label-col">Content Warning</td>
+                  <td>
+                    <div style="display:flex; flex-wrap:wrap; gap:10px; padding:4px 0;">
+                      <label><input type="checkbox" name="cw[]" value="violence" /> Violence</label>
+                      <label><input type="checkbox" name="cw[]" value="death" /> Death / Fatality</label>
+                      <label><input type="checkbox" name="cw[]" value="injury" /> Injury / Blood</label>
+                      <label><input type="checkbox" name="cw[]" value="language" /> Strong Language</label>
+                      <label><input type="checkbox" name="cw[]" value="arrest" /> Arrest / Use of Force</label>
+                      <label><input type="checkbox" name="cw[]" value="pursuit" /> Vehicle Pursuit</label>
+                      <label><input type="checkbox" name="cw[]" value="shooting" /> Officer Involved Shooting</label>
+                    </div>
+                    <span class="form-hint">Check all that apply</span>
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- TERMS -->
+              <div class="form-section-title">SECTION 5 &mdash; TERMS &amp; SUBMISSION</div>
+
+              <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="label-col">&nbsp;</td>
+                  <td>
+                    <div style="background-color:#fff8dc; border:1px solid #cc9900; padding:8px; margin-bottom:8px; font-size:11px;">
+                      <strong>BY SUBMITTING YOU CONFIRM THAT:</strong><br />
+                      &bull; The footage is publicly accessible and real<br />
+                      &bull; You are not submitting fabricated, staged, or fictional content<br />
+                      &bull; You are not submitting content to harass, doxx, or harm any individual<br />
+                      &bull; You are 18 years of age or older<br />
+                      &bull; Your submission will be visible publicly and may be permanent
+                    </div>
+                    <label style="font-family:Arial,sans-serif;font-size:12px;">
+                      <input type="checkbox" id="f-agree" name="agree" />
+                      &nbsp;<strong>I confirm the above and agree to the submission terms <span class="required">*</span></strong>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn-submit">&#9654; SUBMIT TO ARCHIVE</button>
+                <button type="reset" class="btn-reset" onclick="resetForm()">CLEAR FORM</button>
+              </div>
+
+            </form>
+          </div>
+
+        </td>
+
+        <!-- RIGHT SIDEBAR -->
+        <td id="right-sidebar" width="180">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">ARCHIVE STATS</div>
+            <table class="stats-table" width="100%" cellpadding="3" cellspacing="0" border="1">
+              <tr><td>Total Links</td><td id="stat-total">0</td></tr>
+              <tr><td>Body Cam</td><td id="stat-bodycam">0</td></tr>
+              <tr><td>Police</td><td id="stat-police">0</td></tr>
+              <tr><td>CCTV</td><td id="stat-cctv">0</td></tr>
+              <tr><td>Dash Cam</td><td id="stat-dashcam">0</td></tr>
+              <tr><td>Bystander</td><td id="stat-bystander">0</td></tr>
+              <tr><td>Other</td><td id="stat-other">0</td></tr>
+            </table>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">BEFORE SUBMITTING</div>
+            <p class="sidebar-text">
+              Make sure the link works and is publicly accessible. Test it in a new browser window before submitting.
+            </p>
+            <p class="sidebar-text">
+              Provide as much accurate information as possible to help others find and understand the footage.
+            </p>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">QUICK LINKS</div>
+            <ul class="sidebar-list">
+              <li><a href="browse.html">Browse Archive</a></li>
+              <li><a href="index.html">Return Home</a></li>
+              <li><a href="about.html#policy">Submission Policy</a></li>
+              <li><a href="about.html#disclaimer">Disclaimer</a></li>
+            </ul>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="footer">
+    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+      <tr>
+        <td>
+          <p>
+            PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE (PAFA) &mdash;
+            Not affiliated with any government agency or law enforcement body. &mdash;
+            All video content belongs to respective copyright holders.
+          </p>
+          <p>
+            [ <a href="index.html">Home</a> ] &nbsp;
+            [ <a href="browse.html">Browse</a> ] &nbsp;
+            [ <a href="about.html">About</a> ] &nbsp;
+            [ <a href="about.html#disclaimer">Disclaimer</a> ]
+          </p>
+          <p class="footer-small">Page generated: <span id="footer-date"></span></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US');
+    document.getElementById('footer-date').textContent = new Date().toUTCString();
+    updateStats();
+
+    function resetForm() {
+      document.getElementById('submit-form').reset();
+      document.getElementById('msg-success').style.display = 'none';
+      document.getElementById('msg-error').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

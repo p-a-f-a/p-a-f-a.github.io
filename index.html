@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Public Accountability Footage Archive - Body Camera, CCTV, Police, and Surveillance Footage Archive" />
+  <meta name="keywords" content="body cam, police footage, CCTV, surveillance, public record, accountability" />
+  <title>PAFA - Public Accountability Footage Archive</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BANNER BAR -->
+  <div id="top-bar">
+    <span>PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE &nbsp;|&nbsp; Est. 2026 &nbsp;|&nbsp; Original law enforcement footage &mdash; sourced, reviewed &amp; published by PAFA &nbsp;|&nbsp;
+    &#9660; <strong>BODY CAM LINKS MAY BE REMOVED FROM SERVERS TO SAVE SPACE &mdash; SAVE WHILE AVAILABLE</strong> &#9660;</span>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td id="header-logo">
+          <img src="seal.png" alt="[SEAL]" width="80" height="80" onerror="this.style.display='none'" />
+          <div id="header-title">
+            <h1>PUBLIC ACCOUNTABILITY<br />FOOTAGE ARCHIVE</h1>
+            <p class="header-sub">PAFA &mdash; Unofficial Public Record Repository</p>
+          </div>
+        </td>
+        <td id="header-right" valign="bottom">
+          <p class="header-date">Last Updated: <span id="last-updated"></span></p>
+          <p class="header-date">Total Records: <strong id="total-count">0</strong></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html" class="nav-active">[ HOME ]</a></li>
+      <li><a href="browse.html">[ BROWSE FOOTAGE ]</a></li>
+      <li><a href="about.html">[ ABOUT / DISCLAIMER ]</a></li>
+    </ul>
+  </div>
+
+  <!-- ALERT BANNER -->
+  <div id="alert-banner">
+    <strong>&#9888; NOTICE:</strong> This archive contains links to real footage depicting law enforcement activity,
+    incidents, and surveillance recordings. Some content may be disturbing. Viewer discretion is advised.
+    All footage is sourced, reviewed, and published exclusively by PAFA. Some records contain original agency-issued subtitles. Non-profit public record archive.
+  </div>
+
+  <!-- STORAGE / DELETION WARNING BANNER -->
+  <div id="storage-warning-banner">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="28" align="center" valign="top" style="font-size:20px; padding-top:2px;">&#128190;</td>
+      <td>
+        <strong>SERVER STORAGE NOTICE &mdash; IMPORTANT:</strong>
+        Body camera footage links posted to this archive are subject to removal from source servers at any time to conserve storage capacity.
+        Once a body cam recording becomes available, it <strong>may be permanently deleted</strong> from the original hosting server shortly after.
+        <strong>We strongly advise all visitors to save, download, or otherwise preserve any footage of interest immediately upon discovery.</strong>
+        PAFA cannot guarantee the continued availability of any linked video. Check back regularly and
+        <a href="#notify-section" style="color:#003366; font-weight:bold;">subscribe to notifications</a> to be alerted when new body cam footage is released.
+      </td>
+    </tr></table>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main-wrapper">
+    <table width="100%" cellpadding="0" cellspacing="10" border="0">
+      <tr valign="top">
+
+        <!-- LEFT SIDEBAR -->
+        <td id="left-sidebar" width="200">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">CATEGORIES</div>
+            <ul class="sidebar-list">
+              <li><a href="browse.html?cat=bodycam">&#187; Body Camera</a></li>
+              <li><a href="browse.html?cat=police">&#187; Police Footage</a></li>
+              <li><a href="browse.html?cat=cctv">&#187; CCTV / Surveillance</a></li>
+              <li><a href="browse.html?cat=dashcam">&#187; Dash Camera</a></li>
+              <li><a href="browse.html?cat=bystander">&#187; Bystander Recording</a></li>
+              <li><a href="browse.html?cat=helicopter">&#187; Helicopter / Aerial</a></li>
+              <li><a href="browse.html?cat=courtroom">&#187; Courtroom Footage</a></li>
+              <li><a href="browse.html?cat=other">&#187; Other / Misc.</a></li>
+              <li><a href="browse.html">&#187; [ VIEW ALL ]</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">QUICK STATS</div>
+            <table class="stats-table" width="100%" cellpadding="3" cellspacing="0" border="1">
+              <tr><td>Total Records</td><td id="stat-total">56</td></tr>
+              <tr><td>Body Cam</td><td id="stat-bodycam">18</td></tr>
+              <tr><td>Police</td><td id="stat-police">9</td></tr>
+              <tr><td>CCTV</td><td id="stat-cctv">14</td></tr>
+              <tr><td>Dash Cam</td><td id="stat-dashcam">6</td></tr>
+              <tr><td>Bystander</td><td id="stat-bystander">5</td></tr>
+              <tr><td>Other</td><td id="stat-other">4</td></tr>
+              <tr style="background:#fffbe6;"><td colspan="2" style="font-size:9px;color:#886600;">&#9888; Some records temporarily unavailable. Server maintenance in progress.</td></tr>
+            </table>
+          </div>
+
+          <div class="sidebar-box" style="background:#fff0f0; border:2px solid #cc0000;">
+            <div class="sidebar-title" style="background:#cc0000;">&#9888; NOTICE</div>
+            <p class="sidebar-text">
+              <strong>This archive does not accept public submissions.</strong> All footage records are sourced, reviewed, and published exclusively by PAFA administration.
+            </p>
+            <p class="sidebar-text">
+              If you have a concern about a specific record, use the <strong>REPORT</strong> function on the entry.
+            </p>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">VERIFIED SOURCES</div>
+            <ul class="sidebar-list">
+              <li>&#10003; Official agency releases</li>
+              <li>&#10003; Vimeo (PAFA-hosted)</li>
+              <li>&#10003; YouTube (official channels)</li>
+              <li>&#10003; Court &amp; public records</li>
+              <li>&#10003; FOIA / public records releases</li>
+              <li>&#10003; News media original footage</li>
+            </ul>
+          </div>
+
+        </td>
+
+        <!-- MAIN CONTENT AREA -->
+        <td id="content-area">
+
+          <div class="content-section">
+            <h2 class="section-title">WELCOME TO THE PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE</h2>
+            <hr class="section-hr" />
+            <p>
+              The <strong>Public Accountability Footage Archive (PAFA)</strong> is a community-maintained repository
+              of publicly available links to real footage involving law enforcement, surveillance systems, body cameras,
+              CCTV recordings, and other documentation of public safety and government activity.
+            </p>
+            <p>
+              This archive exists for public accountability, research, journalism, legal reference, and historical documentation.
+              We believe in <strong>transparent access to public record footage</strong>.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">RECENT PAFA RECORDS</h2>
+            <hr class="section-hr" />
+            <p class="small-note">Showing most recent 10 entries. <a href="browse.html">Browse all &raquo;</a></p>
+            <div id="recent-submissions">
+              <p class="no-entries">No records yet. New footage records are published by PAFA administration. <a href="browse.html">Browse all records &raquo;</a></p>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">ABOUT PAFA ORIGINAL FOOTAGE</h2>
+            <hr class="section-hr" />
+            <table class="info-table" width="100%" cellpadding="8" cellspacing="0" border="1">
+              <tr class="info-table-header">
+                <th>What is PAFA?</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td><strong>Source</strong></td>
+                <td>All footage in this archive is sourced directly from official law enforcement agency releases, public records (FOIA) productions, and authorized distributions. No user-submitted content.</td>
+              </tr>
+              <tr class="row-alt">
+                <td><strong>Original File</strong></td>
+                <td>PAFA publishes footage exactly as received from the source agency. We do not alter, modify, or re-edit any video file. This is the original footage.</td>
+              </tr>
+              <tr>
+                <td><strong>Subtitles</strong></td>
+                <td>Some clips contain subtitles or captions embedded directly into the video. These are <strong>original agency-issued subtitles</strong> &mdash; added by the releasing agency, not by PAFA. We present footage as received.</td>
+              </tr>
+              <tr class="row-alt">
+                <td><strong>Pre-Edited / Cut</strong></td>
+                <td>Some footage has been pre-edited or segmented by PAFA to isolate the most relevant and useful portions of a longer recording. Each clip is labelled accordingly. The original unedited source file is preserved.</td>
+              </tr>
+              <tr>
+                <td><strong>Non-Profit</strong></td>
+                <td>PAFA is a fully non-profit public accountability project. No revenue is generated from this archive. Footage is distributed free of charge for public accountability, journalism, legal research, and academic use.</td>
+              </tr>
+              <tr class="row-alt">
+                <td><strong>Blurred Content</strong></td>
+                <td>Some footage contains blurring or redactions applied by the original releasing agency for officer safety, privacy compliance, or operational security. PAFA does not apply or remove any blurring.</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">ARCHIVE POLICY</h2>
+            <hr class="section-hr" />
+            <ul class="policy-list">
+              <li>All records are sourced, reviewed, and published exclusively by PAFA administration &mdash; no public submissions accepted</li>
+              <li>All footage is obtained from official agency releases, FOIA productions, or authorized public distributions</li>
+              <li>Footage is presented in its original unaltered form as received from the source</li>
+              <li>Some clips have been pre-edited or segmented by PAFA to isolate relevant portions &mdash; all editing is documented on the record</li>
+              <li>Some footage contains subtitles embedded by the releasing agency &mdash; these are original and have not been added or modified by PAFA</li>
+              <li>This site does not host or store video files. Footage is linked from its original hosting platform (Vimeo, YouTube, etc.)</li>
+              <li>Body cam and police footage links are subject to server-side deletion &mdash; save footage immediately while accessible</li>
+              <li><strong>Some footage may have portions blurred or obscured by the original releasing agency for officer safety or privacy compliance. PAFA presents footage exactly as received.</strong></li>
+              <li>PAFA is a fully non-profit project. No revenue is generated from this archive.</li>
+            </ul>
+          </div>
+
+          <!-- NOTIFICATION SECTION -->
+          <a name="notify-section"></a>
+          <div class="content-section" id="notify-section">
+            <h2 class="section-title">&#128276; SUBSCRIBE &mdash; NEW FOOTAGE NOTIFICATIONS</h2>
+            <hr class="section-hr" />
+            <div class="notify-box">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr valign="top">
+                <td width="60%" style="padding-right:20px;">
+                  <p>
+                    Due to the <strong>temporary availability of body cam footage links</strong> on source servers,
+                    we strongly recommend subscribing to notifications. When new body camera footage, police
+                    recordings, or other significant footage is added to the archive, subscribers receive an
+                    immediate alert.
+                  </p>
+                  <p>
+                    <strong>Why subscribe?</strong> Body cam footage links are frequently removed from hosting
+                    servers shortly after being made available &mdash; sometimes within hours &mdash; to manage
+                    storage capacity and comply with data retention policies. Subscribers are notified first
+                    and have the best chance of accessing footage before links expire.
+                  </p>
+                  <p class="small-note">&#9888; Subscription data is stored locally in your browser only. No server-side account is created.</p>
+                  <div id="notify-main-result"></div>
+                  <form onsubmit="subscribeNotify(event,'main')" autocomplete="off">
+                    <table class="form-table" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="label-col">Email Address</td>
+                        <td><input type="email" id="notify-email-main" class="form-input" placeholder="your@email.com" required /></td>
+                      </tr>
+                      <tr>
+                        <td class="label-col">Notify me for</td>
+                        <td>
+                          <select id="notify-cat-main" class="form-select">
+                            <option value="all">All New Footage</option>
+                            <option value="bodycam">Body Camera Footage Only</option>
+                            <option value="police">Police Footage Only</option>
+                            <option value="cctv">CCTV / Surveillance Only</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td style="padding-top:6px;">
+                          <button type="submit" class="btn-submit" style="font-size:12px; padding:4px 18px;">&#128276; SUBSCRIBE TO ALERTS</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </td>
+                <td style="border-left:1px solid #cccccc; padding-left:16px;">
+                  <div class="notify-current-box">
+                    <strong>YOUR CURRENT SUBSCRIPTIONS</strong>
+                    <div id="notify-current-list"><p class="small-note">None yet.</p></div>
+                  </div>
+                </td>
+              </tr></table>
+            </div>
+          </div>
+
+          <!-- DONATE SECTION -->
+          <a name="donate-section"></a>
+          <div class="content-section" id="donate-section">
+            <h2 class="section-title">&#9829; SUPPORT THIS ARCHIVE &mdash; DONATE</h2>
+            <hr class="section-hr" />
+            <div class="donate-box">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr valign="top">
+                <td width="60%" style="padding-right:20px;">
+                  <p>
+                    PAFA is a <strong>100% independent, community-funded archive</strong>.
+                    We receive no government funding, no advertising revenue, and no institutional support.
+                    Operational costs &mdash; including server bandwidth, archival processing, footage review,
+                    and redaction operations &mdash; are covered entirely by visitor donations.
+                  </p>
+                  <p>
+                    Your donation directly supports:
+                  </p>
+                  <ul class="policy-list" style="margin-bottom:8px;">
+                    <li>Server and bandwidth costs for the archive</li>
+                    <li>Manual review and redaction of sensitive footage prior to listing</li>
+                    <li>Ongoing archival and preservation operations</li>
+                    <li>Notification system infrastructure</li>
+                    <li>Maintaining availability of body cam and police footage links</li>
+                  </ul>
+                  <p class="small-note">
+                    All donations are voluntary. PAFA is not a registered charity. Donations are not tax-deductible.
+                    Donation processing details will be provided by the archive administrator.
+                  </p>
+                </td>
+                <td style="border-left:1px solid #cccccc; padding-left:16px;">
+                  <div class="donate-tier-box">
+                    <p class="donate-tier-title">SUPPORTER TIERS</p>
+                    <table width="100%" cellpadding="5" cellspacing="0" border="1" class="info-table">
+                      <tr class="info-table-header"><th>Amount</th><th>Tier</th></tr>
+                      <tr><td>$5</td><td>Basic Supporter</td></tr>
+                      <tr class="row-alt"><td>$10</td><td>Archive Friend</td></tr>
+                      <tr><td>$25</td><td>Record Keeper</td></tr>
+                      <tr class="row-alt"><td>$50</td><td>Accountability Advocate</td></tr>
+                      <tr><td>$100+</td><td>Archive Guardian</td></tr>
+                    </table>
+                    <p style="margin-top:8px; font-size:11px; font-family:Arial,sans-serif;">
+                      Contact archive administrator for donation instructions.
+                    </p>
+                  </div>
+                </td>
+              </tr></table>
+            </div>
+          </div>
+
+        </td>
+
+        <!-- RIGHT SIDEBAR -->
+        <td id="right-sidebar" width="180">
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">ANNOUNCEMENTS</div>
+            <div class="announcement-item">
+              <p class="ann-date">02/28/2026</p>
+              <p class="ann-text">Archive officially launched. Footage records are now publicly accessible.</p>
+            </div>
+            <div class="announcement-item" style="background-color:#fff0f0; border-left:4px solid #cc0000;">
+              <p class="ann-date" style="color:#cc0000;">02/28/2026 &mdash; &#9888; NOTICE</p>
+              <p class="ann-text"><strong>PUBLIC SUBMISSIONS ARE NOT ACCEPTED.</strong> This archive does not accept footage link submissions from the public. All records are sourced, reviewed, and published exclusively by PAFA administration. Do not attempt to submit footage &mdash; submissions will not be reviewed or posted.</p>
+            </div>
+            <div class="announcement-item" style="background-color:#fff0f0;">
+              <p class="ann-date" style="color:#cc0000;">02/28/2026 &mdash; &#9888; STORAGE ALERT</p>
+              <p class="ann-text"><strong>Body cam links are subject to server-side deletion once footage is released/archived. Download immediately. Links may expire without notice.</strong></p>
+            </div>
+            <div class="announcement-item">
+              <p class="ann-date">02/28/2026</p>
+              <p class="ann-text">Notification subscriptions now available. <a href="#notify-section">Subscribe below</a> to receive alerts for new body cam footage.</p>
+            </div>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">IMPORTANT LINKS</div>
+            <ul class="sidebar-list">
+              <li><a href="browse.html">Browse Archive</a></li>
+              <li><a href="about.html">About PAFA</a></li>
+              <li><a href="about.html#disclaimer">Disclaimer</a></li>
+              <li><a href="about.html#policy">Content Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box sidebar-warning">
+            <div class="sidebar-title">&#9888; WARNING</div>
+            <p class="sidebar-text">
+              Some footage in this archive may contain graphic content including violence,
+              injury, or death. Content is not filtered. You must be 18+ to view footage.
+            </p>
+          </div>
+
+          <div class="sidebar-box sidebar-notify">
+            <div class="sidebar-title">&#128276; GET NOTIFIED</div>
+            <p class="sidebar-text">Get email alerts when new body cam footage is added to the archive.</p>
+            <div id="notify-sidebar-result"></div>
+            <form onsubmit="subscribeNotify(event,'sidebar')" autocomplete="off">
+              <input type="email" id="notify-email-sidebar" placeholder="your@email.com" class="form-input" style="margin-bottom:4px;" required />
+              <select id="notify-cat-sidebar" class="form-select" style="width:100%; margin-bottom:4px;">
+                <option value="all">All New Footage</option>
+                <option value="bodycam">Body Camera Only</option>
+                <option value="police">Police Footage Only</option>
+                <option value="cctv">CCTV Only</option>
+              </select>
+              <input type="submit" value="SUBSCRIBE" class="btn-search" style="width:100%;" />
+            </form>
+          </div>
+
+          <div class="sidebar-box sidebar-donate">
+            <div class="sidebar-title">&#9829; SUPPORT PAFA</div>
+            <p class="sidebar-text">
+              Server costs, archival bandwidth, and review operations are funded entirely by community donations.
+              Help us keep this archive running.
+            </p>
+            <p class="sidebar-text" style="text-align:center;">
+              <a href="#donate-section" class="btn-donate-sm">DONATE &raquo;</a>
+            </p>
+          </div>
+
+          <div class="sidebar-box">
+            <div class="sidebar-title">SEARCH</div>
+            <form action="browse.html" method="get" id="search-form">
+              <input type="text" name="q" id="search-box" placeholder="Search footage..." /><br />
+              <input type="submit" value="SEARCH" class="btn-search" />
+            </form>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+      <tr>
+        <td>
+          <p>
+            PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE (PAFA) &mdash;
+            This website is an independent, non-governmental public archive. &mdash;
+            Not affiliated with any government agency, law enforcement body, or official entity. &mdash;
+            All video content belongs to respective copyright holders. &mdash;
+            PAFA only stores record metadata and links.
+          </p>
+          <p>
+            [ <a href="index.html">Home</a> ] &nbsp;
+            [ <a href="browse.html">Browse</a> ] &nbsp;
+            [ <a href="about.html">About</a> ] &nbsp;
+            [ <a href="about.html#disclaimer">Disclaimer</a> ]
+          </p>
+          <p class="footer-small">
+            Best viewed in 1024x768 resolution or higher. &nbsp;|&nbsp;
+            All times displayed in UTC. &nbsp;|&nbsp;
+            Page generated: <span id="footer-date"></span>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US');
+    document.getElementById('footer-date').textContent = new Date().toUTCString();
+    loadHomePage();
+  </script>
+</body>
+</html>
