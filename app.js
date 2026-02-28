@@ -1434,7 +1434,7 @@ function renderBrowsePage() {
       '<div class="unavailable-body">'+
         '<table cellpadding="4" cellspacing="0" border="0" width="100%" style="margin-bottom:10px;">'+
           '<tr><td style="font-weight:bold;width:160px;">STATUS:</td><td style="color:#cc0000;"><strong>SERVICE INTERRUPTION &mdash; CATEGORY TEMPORARILY OFFLINE</strong></td></tr>'+
-          '<tr><td style="font-weight:bold;">INCIDENT REF.:</td><td style="font-family:monospace;">PAFA-SRV-2024-' + Math.floor(10000 + Math.random()*89999) + '</td></tr>'+'
+          '<tr><td style="font-weight:bold;">INCIDENT REF.:</td><td style="font-family:monospace;">PAFA-SRV-2024-' + Math.floor(10000 + Math.random()*89999) + '</td></tr>'+
           '<tr><td style="font-weight:bold;">AFFECTED RECORDS:</td><td>Records in this category are temporarily inaccessible while we migrate to upgraded archive servers.</td></tr>'+
           '<tr><td style="font-weight:bold;">EST. RESTORATION:</td><td>IN PROGRESS &mdash; NO FIXED DATE. CHECK BACK PERIODICALLY.</td></tr>'+
         '</table>'+
