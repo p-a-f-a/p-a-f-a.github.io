@@ -1349,8 +1349,8 @@ function loadHomePage() {
 
   var html = '';
 
-  // Always show pinned entries first
-  PINNED_ENTRIES.forEach(function(pe) {
+  // Show fake/archived entries only on homepage (index 0 is real footage — accessible at record.html only)
+  PINNED_ENTRIES.slice(1).forEach(function(pe) {
     html += buildPinnedEntryHTML(pe);
   });
 
