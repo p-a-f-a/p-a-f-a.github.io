@@ -36,17 +36,17 @@ var PINNED_ENTRIES = [
     pinned: true,
     category: 'bodycam',
     title: 'Drunk Man Strips, Runs Into Ocean to Avoid Police (Official Body Camera Footage)',
-    url: 'https://player.vimeo.com/video/1169179060?badge=0&autopause=0&player_id=0&app_id=58479',
+    url: '#pafa-protected',
     url_pending: false,
     platform: 'Vimeo',
     multi_part: true,
     clips: [
-      { id: '1169179060', title: 'CAD-03',              label: 'CLIP 1 — CAD-03' },
-      { id: '1169179364', title: 'CAD-04',              label: 'CLIP 2 — CAD-04' },
-      { id: '1169179772', title: 'Part B — Camera 2',   label: 'CLIP 3 — PART B / CAMERA 2' },
-      { id: '1169178723', title: '17CD — ID',            label: 'CLIP 4 — 17CD / SUBJECT ID' },
-      { id: '1169180408', title: 'Revised — CAD173ED',  label: 'CLIP 5 — REVISED CAD173ED' },
-      { id: '1169178798', title: 'CAD-FINALE 75EDW',    label: 'CLIP 6 — CAD-FINALE (75EDW)' }
+      { id: 'MTE2OTE3OTA2MA==',  title: 'CAD-03',             label: 'CLIP 1 — CAD-03' },
+      { id: 'MTE2OTE3OTM2NA==',  title: 'CAD-04',             label: 'CLIP 2 — CAD-04' },
+      { id: 'MTE2OTE3OTc3Mg==',  title: 'Part B — Camera 2',  label: 'CLIP 3 — PART B / CAMERA 2' },
+      { id: 'MTE2OTE3ODcyMw==',  title: '17CD — ID',           label: 'CLIP 4 — 17CD / SUBJECT ID' },
+      { id: 'MTE2OTE4MDQwOA==',  title: 'Revised — CAD173ED', label: 'CLIP 5 — REVISED CAD173ED' },
+      { id: 'MTE2OTE3ODc5OA==',  title: 'CAD-FINALE 75EDW',   label: 'CLIP 6 — CAD-FINALE (75EDW)' }
     ],
     incident_date: '2024-05-27',
     location: 'Palm Beach County, Florida, USA',
@@ -778,6 +778,24 @@ document.addEventListener('click', function(ev) {
   if (ev.target === overlay) modalClose();
 });
 
+// Security: disable right-click on modal player to prevent View Frame Source
+document.addEventListener('contextmenu', function(ev) {
+  var modal = document.getElementById('pafa-access-modal');
+  if (modal && modal.style.display === 'block') { ev.preventDefault(); return false; }
+});
+
+// Security: block common DevTools keyboard shortcuts
+document.addEventListener('keydown', function(ev) {
+  var k = ev.key;
+  // F12
+  if (k === 'F12') { ev.preventDefault(); return false; }
+  // Ctrl+U (view source), Ctrl+Shift+I/J/C (devtools)
+  if (ev.ctrlKey && (k === 'u' || k === 'U')) { ev.preventDefault(); return false; }
+  if (ev.ctrlKey && ev.shiftKey && (k === 'i' || k === 'I' || k === 'j' || k === 'J' || k === 'c' || k === 'C')) { ev.preventDefault(); return false; }
+  // Cmd+Option+I (Mac devtools)
+  if (ev.metaKey && ev.altKey && (k === 'i' || k === 'I')) { ev.preventDefault(); return false; }
+});
+
 /**
  * Build one footage entry card HTML.
  * @param {Object} e
@@ -1251,7 +1269,8 @@ function buildPinnedEntryHTML(e) {
         '</div>'+
         '<table class="clips-grid" cellpadding="0" cellspacing="0" border="0"><tr>'+
           e.clips.map(function(clip, idx) {
-            var embedUrl = 'https://player.vimeo.com/video/' + clip.id + '?badge=0&autopause=0&player_id=0&app_id=58479';
+            var _cid = (typeof atob === 'function') ? atob(clip.id) : clip.id;
+            var embedUrl = 'https://player.vimeo.com/video/' + _cid + '?badge=0&autopause=0&player_id=0&app_id=58479';
             var slotAttr = escapeAttr(embedUrl);
             var labelAttr = escapeAttr(clip.label);
             return '<td class="clips-grid-cell">'+
