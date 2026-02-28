@@ -601,7 +601,7 @@ function injectModalDOM() {
             '<div id="pafa-modal-clip-label"></div>'+
             '<div id="pafa-modal-iframe-wrap" style="position:relative;">'+
               '<iframe id="pafa-modal-iframe" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen style="width:100%;height:100%;border:0;"></iframe>'+
-              '<div style="position:absolute;bottom:0;right:0;width:100px;height:42px;z-index:10;background:transparent;cursor:default;" title=""></div>'+
+              '<div style="position:absolute;bottom:0;right:0;width:120px;height:52px;z-index:2147483647;background:rgba(0,0,0,0.001);cursor:default;" onclick="return false;" ondblclick="return false;"></div>'+
             '</div>'+
             '<div style="text-align:center;margin-top:8px;">'+ 
               '<button onclick="modalClose()" style="font-family:Arial,sans-serif;font-size:11px;background:#003366;color:#fff;border:none;padding:5px 18px;cursor:pointer;">&#10005; CLOSE VIDEO</button>'+
