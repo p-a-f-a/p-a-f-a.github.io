@@ -1,4 +1,4 @@
-﻿/**
+/**
  * PUBLIC ACCOUNTABILITY FOOTAGE ARCHIVE - app.js
  * Handles all data storage, retrieval, rendering, and form submission.
  * Data is stored in browser localStorage.
@@ -41,12 +41,12 @@ var PINNED_ENTRIES = [
     platform: 'Vimeo',
     multi_part: true,
     clips: [
-      { id: 'MTE2OTE3OTA2MA==',  title: 'CAD-03',             label: 'CLIP 1 — CAD-03' },
-      { id: 'MTE2OTE3OTM2NA==',  title: 'CAD-04',             label: 'CLIP 2 — CAD-04' },
-      { id: 'MTE2OTE3OTc3Mg==',  title: 'Part B — Camera 2',  label: 'CLIP 3 — PART B / CAMERA 2' },
-      { id: 'MTE2OTE3ODcyMw==',  title: '17CD — ID',           label: 'CLIP 4 — 17CD / SUBJECT ID' },
-      { id: 'MTE2OTE4MDQwOA==',  title: 'Revised — CAD173ED', label: 'CLIP 5 — REVISED CAD173ED' },
-      { id: 'MTE2OTE3ODc5OA==',  title: 'CAD-FINALE 75EDW',   label: 'CLIP 6 — CAD-FINALE (75EDW)' }
+      { id: 'MTE2OTE3OTA2MA==',  title: 'CAD-03',             label: 'CLIP 1 � CAD-03' },
+      { id: 'MTE2OTE3OTM2NA==',  title: 'CAD-04',             label: 'CLIP 2 � CAD-04' },
+      { id: 'MTE2OTE3OTc3Mg==',  title: 'Part B � Camera 2',  label: 'CLIP 3 � PART B / CAMERA 2' },
+      { id: 'MTE2OTE3ODcyMw==',  title: '17CD � ID',           label: 'CLIP 4 � 17CD / SUBJECT ID' },
+      { id: 'MTE2OTE4MDQwOA==',  title: 'Revised � CAD173ED', label: 'CLIP 5 � REVISED CAD173ED' },
+      { id: 'MTE2OTE3ODc5OA==',  title: 'CAD-FINALE 75EDW',   label: 'CLIP 6 � CAD-FINALE (75EDW)' }
     ],
     incident_date: '2024-05-27',
     location: 'Palm Beach County, Florida, USA',
@@ -57,12 +57,12 @@ var PINNED_ENTRIES = [
     footage_number: 'PBSO-BWC-2024-052700-001',
     classification: 'PUBLIC INTOXICATION / RESISTING OFFICER WITHOUT VIOLENCE / INDECENT EXPOSURE / DISORDERLY CONDUCT',
     footage_type: 'BODY-WORN CAMERA (BWC)',
-    release_class: 'PUBLIC RELEASE — LAW ENFORCEMENT TRANSPARENCY',
+    release_class: 'PUBLIC RELEASE � LAW ENFORCEMENT TRANSPARENCY',
     thumbnail: 'images/suspect-001.png',
     content_warnings: ['arrest', 'violence', 'language'],
     nonprofit: true,
     temporary: true,
-    description: 'On May 27, 2024, Palm Beach County law enforcement officers were dispatched to a crowded Florida beach following multiple disturbance reports involving a heavily intoxicated male. Upon making contact with the subject, officers observed visible signs of severe intoxication and significant sunburn across the subject\'s exposed skin. Officers issued a lawful directive for the individual to collect his belongings and vacate the public beach area.\n\nRather than comply with the officers\' lawful orders, the subject became increasingly argumentative and uncooperative. In an apparent attempt to evade detention, the individual removed his lower clothing and voluntarily waded into the ocean surf, forcing officers to maintain a perimeter and await his return to shore.\n\nUpon returning from the water, the subject continued to resist lawful detention. He refused to present his hands for handcuffing and deployed a passive resistance technique, deliberately going limp and dropping his full body weight onto the sand. Officers were required to physically drag the uncooperative individual across the beach and up a flight of wooden access stairs to reach the awaiting law enforcement vehicles. The removal was witnessed by a large crowd of beachgoers, who are audibly heard applauding the officers\' efforts throughout the encounter.\n\nFollowing the physical removal, Palm Beach County Fire Rescue units conducted a medical evaluation of the subject on scene prior to his formal transport to the county detention facility. A full breakdown of the criminal charges filed against the individual is documented within this footage record.\n\nThis record is published under public accountability and law enforcement transparency provisions. All footage is sourced from officially released body camera recordings. Non-profit archival use only. This footage link is subject to server-side deletion — save immediately.',
+    description: 'On May 27, 2024, Palm Beach County law enforcement officers were dispatched to a crowded Florida beach following multiple disturbance reports involving a heavily intoxicated male. Upon making contact with the subject, officers observed visible signs of severe intoxication and significant sunburn across the subject\'s exposed skin. Officers issued a lawful directive for the individual to collect his belongings and vacate the public beach area.\n\nRather than comply with the officers\' lawful orders, the subject became increasingly argumentative and uncooperative. In an apparent attempt to evade detention, the individual removed his lower clothing and voluntarily waded into the ocean surf, forcing officers to maintain a perimeter and await his return to shore.\n\nUpon returning from the water, the subject continued to resist lawful detention. He refused to present his hands for handcuffing and deployed a passive resistance technique, deliberately going limp and dropping his full body weight onto the sand. Officers were required to physically drag the uncooperative individual across the beach and up a flight of wooden access stairs to reach the awaiting law enforcement vehicles. The removal was witnessed by a large crowd of beachgoers, who are audibly heard applauding the officers\' efforts throughout the encounter.\n\nFollowing the physical removal, Palm Beach County Fire Rescue units conducted a medical evaluation of the subject on scene prior to his formal transport to the county detention facility. A full breakdown of the criminal charges filed against the individual is documented within this footage record.\n\nThis record is published under public accountability and law enforcement transparency provisions. All footage is sourced from officially released body camera recordings. Non-profit archival use only. This footage link is subject to server-side deletion � save immediately.',
     charges: [
       'Disorderly Intoxication (F.S. 856.011)',
       'Resisting Officer Without Violence (F.S. 843.02)',
@@ -93,7 +93,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'SERVER_CAPACITY',
     removal_ref: 'PAFA-ARCH-2025-110042',
     category: 'bodycam',
-    title: 'Domestic Battery Suspect Attempts to Barricade Home — Officers Force Entry (Body Camera)',
+    title: 'Domestic Battery Suspect Attempts to Barricade Home � Officers Force Entry (Body Camera)',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -106,7 +106,7 @@ var PINNED_ENTRIES = [
     footage_number: 'MCSO-BWC-2024-110342-001',
     classification: 'DOMESTIC BATTERY / RESISTING OFFICER WITH VIOLENCE / FALSE IMPRISONMENT',
     footage_type: 'BODY-WORN CAMERA (BWC)',
-    release_class: 'PUBLIC RELEASE — LAW ENFORCEMENT TRANSPARENCY',
+    release_class: 'PUBLIC RELEASE � LAW ENFORCEMENT TRANSPARENCY',
     thumbnail: 'images/suspect-002.jpg',
     content_warnings: ['arrest', 'violence', 'language', 'domestic'],
     nonprofit: true,
@@ -120,8 +120,8 @@ var PINNED_ENTRIES = [
     in_video: [
       'Deputies arrive and make contact with injured victim',
       'Suspect retreats and attempts to barricade inside residence',
-      'Deputies negotiate through door — subject non-compliant',
-      'Forced entry by deputies — suspect resists',
+      'Deputies negotiate through door � subject non-compliant',
+      'Forced entry by deputies � suspect resists',
       'Takedown and restraint in living room area',
       'Medical evaluation on scene'
     ],
@@ -136,7 +136,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'FULL_ARCHIVE',
     removal_ref: 'PAFA-ARCH-2025-093817',
     category: 'police',
-    title: 'Armed Robbery Suspect Apprehended After Foot Pursuit — Officer-Worn Camera and Aerial',
+    title: 'Armed Robbery Suspect Apprehended After Foot Pursuit � Officer-Worn Camera and Aerial',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -149,7 +149,7 @@ var PINNED_ENTRIES = [
     footage_number: 'MDPD-BWC-2024-091422-001',
     classification: 'ARMED ROBBERY / AGGRAVATED ASSAULT WITH FIREARM / FLEEING AND ELUDING',
     footage_type: 'BODY-WORN CAMERA (BWC) + AERIAL',
-    release_class: 'PUBLIC RELEASE — LAW ENFORCEMENT TRANSPARENCY',
+    release_class: 'PUBLIC RELEASE � LAW ENFORCEMENT TRANSPARENCY',
     thumbnail: 'images/suspect-003.jpg',
     content_warnings: ['arrest', 'violence', 'weapons', 'language'],
     nonprofit: true,
@@ -165,7 +165,7 @@ var PINNED_ENTRIES = [
       'Surveillance unit initiates traffic stop',
       'Suspect exits vehicle and flees on foot',
       'Foot pursuit through residential neighborhood',
-      'Firearm discarded during pursuit — captured on aerial',
+      'Firearm discarded during pursuit � captured on aerial',
       'Subject cornered and apprehended in residential yard',
       'Firearm recovery by officers'
     ],
@@ -180,7 +180,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'SERVER_CAPACITY',
     removal_ref: 'PAFA-ARCH-2025-071209',
     category: 'dashcam',
-    title: 'Narcotics Traffic Stop — Large Fentanyl Seizure Documented via Dash Camera (Broward County)',
+    title: 'Narcotics Traffic Stop � Large Fentanyl Seizure Documented via Dash Camera (Broward County)',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -191,9 +191,9 @@ var PINNED_ENTRIES = [
     case_number: 'BCSO-2024-070841',
     incident_number: 'BCSO-2024-IR-070841',
     footage_number: 'BCSO-DCM-2024-070841-001',
-    classification: 'POSSESSION WITH INTENT TO DISTRIBUTE / TRAFFICKING — FENTANYL / CONSPIRACY',
+    classification: 'POSSESSION WITH INTENT TO DISTRIBUTE / TRAFFICKING � FENTANYL / CONSPIRACY',
     footage_type: 'DASH CAMERA (DCM)',
-    release_class: 'PUBLIC RELEASE — NARCOTICS ENFORCEMENT',
+    release_class: 'PUBLIC RELEASE � NARCOTICS ENFORCEMENT',
     thumbnail: 'images/suspect-004.webp',
     content_warnings: ['arrest', 'narcotics', 'language'],
     nonprofit: true,
@@ -206,8 +206,8 @@ var PINNED_ENTRIES = [
     ],
     in_video: [
       'Deputy initiates traffic stop on I-95 northbound',
-      'K-9 unit conducts open-air sniff — positive narcotics alert',
-      'Vehicle searched — modified concealment compartments discovered',
+      'K-9 unit conducts open-air sniff � positive narcotics alert',
+      'Vehicle searched � modified concealment compartments discovered',
       'Fentanyl packages removed and logged',
       'Subject arrested without resistance',
       'Narcotics catalogued on scene'
@@ -223,7 +223,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'STORAGE_CYCLE',
     removal_ref: 'PAFA-ARCH-2025-043391',
     category: 'bodycam',
-    title: 'High-Speed Vehicle Pursuit Termination — PIT Maneuver & Felony Stop (Orange County)',
+    title: 'High-Speed Vehicle Pursuit Termination � PIT Maneuver & Felony Stop (Orange County)',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -236,25 +236,25 @@ var PINNED_ENTRIES = [
     footage_number: 'OCSO-BWC-2024-041903-001',
     classification: 'FLEEING AND ELUDING / AGGRAVATED ASSAULT ON LEO / RECKLESS DRIVING / DRIVING WITH SUSPENDED LICENSE',
     footage_type: 'BODY-WORN CAMERA (BWC) + IN-CAR VIDEO',
-    release_class: 'PUBLIC RELEASE — LAW ENFORCEMENT TRANSPARENCY',
+    release_class: 'PUBLIC RELEASE � LAW ENFORCEMENT TRANSPARENCY',
     thumbnail: '',
     content_warnings: ['arrest', 'vehicle', 'violence', 'language'],
     nonprofit: true,
     temporary: true,
     description: 'On April 19, 2024, Orange County Sheriff\'s deputies initiated a traffic stop on a vehicle whose registered owner had an active felony warrant. The driver refused to stop and accelerated, initiating a high-speed vehicle pursuit. The pursuit reached speeds in excess of 90 mph on public roads before a deputy successfully executed a PIT maneuver that terminated the vehicle.\n\nFollowing the vehicle stop, the suspect was ordered out at gunpoint. The subject complied after a brief standoff and was taken into custody. A search of the vehicle revealed a loaded firearm under the driver\'s seat. This record was removed from the PAFA server during a routine storage cycle.',
     charges: [
-      'Fleeing and Eluding — High Speed (F.S. 316.1935(3))',
+      'Fleeing and Eluding � High Speed (F.S. 316.1935(3))',
       'Aggravated Assault on Law Enforcement Officer (F.S. 784.07)',
       'Carrying Concealed Firearm (F.S. 790.01)',
       'Reckless Driving (F.S. 316.192)',
-      'Driving with Suspended License — Felony (F.S. 322.34)'
+      'Driving with Suspended License � Felony (F.S. 322.34)'
     ],
     in_video: [
-      'Traffic stop initiated — suspect refuses to comply and flees',
+      'Traffic stop initiated � suspect refuses to comply and flees',
       'High-speed pursuit through public roads',
-      'PIT maneuver executed — vehicle terminated',
-      'Felony stop — suspect ordered out at gunpoint',
-      'Suspect complies after standoff — taken into custody',
+      'PIT maneuver executed � vehicle terminated',
+      'Felony stop � suspect ordered out at gunpoint',
+      'Suspect complies after standoff � taken into custody',
       'Firearm discovered under driver seat'
     ],
     tags: 'orange county pursuit bodycam, PIT maneuver florida, felony stop bodycam, high speed chase arrest',
@@ -268,7 +268,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'FULL_ARCHIVE',
     removal_ref: 'PAFA-ARCH-2025-021774',
     category: 'bodycam',
-    title: 'Trespass Refusal Escalates — Taser Deployment Captured on Body Camera (Hillsborough Co.)',
+    title: 'Trespass Refusal Escalates � Taser Deployment Captured on Body Camera (Hillsborough Co.)',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -281,7 +281,7 @@ var PINNED_ENTRIES = [
     footage_number: 'HCSO-BWC-2024-021187-001',
     classification: 'TRESPASS AFTER WARNING / RESISTING OFFICER WITHOUT VIOLENCE / BATTERY ON LEO',
     footage_type: 'BODY-WORN CAMERA (BWC)',
-    release_class: 'PUBLIC RELEASE — LAW ENFORCEMENT TRANSPARENCY',
+    release_class: 'PUBLIC RELEASE � LAW ENFORCEMENT TRANSPARENCY',
     thumbnail: '',
     content_warnings: ['arrest', 'taser', 'language'],
     nonprofit: true,
@@ -293,12 +293,12 @@ var PINNED_ENTRIES = [
       'Resisting Officer Without Violence (F.S. 843.02)'
     ],
     in_video: [
-      'Deputies arrive at commercial property — prior trespass warning on file',
-      'Contact made with subject — commanded to leave',
+      'Deputies arrive at commercial property � prior trespass warning on file',
+      'Contact made with subject � commanded to leave',
       'Subject refuses and makes physical contact with deputy',
-      'Verbal warnings issued — subject non-compliant',
-      'Taser deployment — subject incapacitated',
-      'Subject handcuffed — post-deployment medical check'
+      'Verbal warnings issued � subject non-compliant',
+      'Taser deployment � subject incapacitated',
+      'Subject handcuffed � post-deployment medical check'
     ],
     tags: 'hillsborough trespass bodycam, taser deployment florida, battery on officer bodycam, trespass arrest footage',
     has_case_doc: false
@@ -311,7 +311,7 @@ var PINNED_ENTRIES = [
     removal_reason: 'STORAGE_CYCLE',
     removal_ref: 'PAFA-ARCH-2025-011003',
     category: 'dashcam',
-    title: 'DUI Checkpoint — Heavily Intoxicated Driver Arrested After Field Sobriety Failure (Pinellas)',
+    title: 'DUI Checkpoint � Heavily Intoxicated Driver Arrested After Field Sobriety Failure (Pinellas)',
     url: '#',
     url_pending: false,
     platform: 'Vimeo',
@@ -324,7 +324,7 @@ var PINNED_ENTRIES = [
     footage_number: 'PCSO-DCM-2024-010622-001',
     classification: 'DRIVING UNDER THE INFLUENCE / REFUSAL TO SUBMIT TO TESTING / OPEN CONTAINER',
     footage_type: 'DASH CAMERA (DCM)',
-    release_class: 'PUBLIC RELEASE — TRAFFIC ENFORCEMENT',
+    release_class: 'PUBLIC RELEASE � TRAFFIC ENFORCEMENT',
     thumbnail: '',
     content_warnings: ['arrest', 'language'],
     nonprofit: true,
@@ -332,13 +332,13 @@ var PINNED_ENTRIES = [
     description: 'On January 6, 2024, Pinellas County Sheriff\'s deputies were operating a DUI checkpoint on US-19. A vehicle approached the checkpoint and the driver immediately exhibited signs of impairment including slurred speech, bloodshot eyes, and the odor of alcohol. The driver was directed to a secondary screening area.\n\nWhen asked to perform field sobriety exercises, the subject failed all standardized assessments. When offered a breath test, the subject refused. Deputies placed the subject under arrest. An open container of alcohol was discovered on the passenger floorboard. This footage record was removed during routine storage cycling.',
     charges: [
       'Driving Under the Influence (F.S. 316.193)',
-      'Refusal to Submit to Testing — Second Offense (F.S. 316.1932)',
-      'Open Container — Driver (F.S. 316.1936)'
+      'Refusal to Submit to Testing � Second Offense (F.S. 316.1932)',
+      'Open Container � Driver (F.S. 316.1936)'
     ],
     in_video: [
-      'Driver approaches DUI checkpoint — visible impairment signs',
+      'Driver approaches DUI checkpoint � visible impairment signs',
       'Driver directed to secondary screening area',
-      'Field sobriety exercises administered — multiple failures',
+      'Field sobriety exercises administered � multiple failures',
       'Driver refuses breath test',
       'Subject placed under arrest',
       'Open container discovered on passenger floorboard'
@@ -408,7 +408,7 @@ function generateId(entries) {
 }
 
 /**
- * Remove an entry by ID (admin utility — called via browser console).
+ * Remove an entry by ID (admin utility � called via browser console).
  * Usage: removeEntry('PAFA-000001')
  * @param {string} id
  */
@@ -420,7 +420,7 @@ function removeEntry(id) {
 }
 
 /**
- * Update an existing entry by ID (admin utility — called via browser console).
+ * Update an existing entry by ID (admin utility � called via browser console).
  * Usage: updateEntry('PAFA-000001', { title: 'New Title', description: 'Updated...' })
  * @param {string} id
  * @param {Object} fields
@@ -629,7 +629,7 @@ function openVideoModal(url, id, clipLabel) {
   injectModalDOM();
   _modalTargetUrl = url;
   _modalClipLabel = clipLabel || '';
-  // Reset to notices phase — hide removed panel if present
+  // Reset to notices phase � hide removed panel if present
   var notices = document.getElementById('pafa-modal-notices');
   var player  = document.getElementById('pafa-modal-player');
   var iframe  = document.getElementById('pafa-modal-iframe');
@@ -726,7 +726,7 @@ function openRemovedModal(footageNum, reason) {
   document.body.style.overflow = 'hidden';
 }
 
-/** Close the modal — also stops any playing video. */
+/** Close the modal � also stops any playing video. */
 function modalClose() {
   var el = document.getElementById('pafa-access-modal');
   if (el) el.style.display = 'none';
@@ -743,7 +743,7 @@ function modalClose() {
 function modalProceed() {
   var url = _modalTargetUrl;
   if (!url || url === '#') { modalClose(); return; }
-  // Vimeo URL — embed inline in modal
+  // Vimeo URL � embed inline in modal
   if (url.indexOf('vimeo.com') !== -1) {
     var notices = document.getElementById('pafa-modal-notices');
     var player  = document.getElementById('pafa-modal-player');
@@ -832,7 +832,7 @@ function buildEntryHTML(e) {
   var id = escapeHtml(e.id || '');
   var rawId = e.id || '';
 
-  // Blur notice — shown for body cam, police footage, and any entry where content warnings suggest OIS/use of force
+  // Blur notice � shown for body cam, police footage, and any entry where content warnings suggest OIS/use of force
   var isBodyCam = (e.category === 'bodycam' || e.category === 'police' || e.category === 'helicopter');
   var hasShootingCw = e.content_warnings && (
     e.content_warnings.indexOf('shooting') !== -1 || e.content_warnings.indexOf('arrest') !== -1
@@ -934,7 +934,7 @@ function buildCaseDocHTML(e) {
   return ''+
     '<div class="case-doc-wrap" id="casedoc-' + docId + '">'+
 
-      // ── Document letterhead ──
+      // -- Document letterhead --
       '<div class="case-doc-letterhead">'+
         '<div class="case-doc-seal">&#9733;</div>'+
         '<div class="case-doc-agency-name">' + agency + '</div>'+
@@ -942,7 +942,7 @@ function buildCaseDocHTML(e) {
         '<div class="case-doc-agency-sub">BODY-WORN CAMERA FOOTAGE RELEASE &mdash; PUBLIC RECORDS DOCUMENT</div>'+
       '</div>'+
 
-      // ── Document info table ──
+      // -- Document info table --
       '<table class="case-doc-info-table" cellpadding="0" cellspacing="0" border="0">'+
         '<tr>'+
           '<td class="cdk">DOCUMENT NO.:</td><td class="cdv">' + docId + '</td>'+
@@ -963,7 +963,7 @@ function buildCaseDocHTML(e) {
         '</tr>'+
       '</table>'+
 
-      // ── SECTION I ──
+      // -- SECTION I --
       '<div class="cds-head"><span class="cds-num">SECTION I.</span> INCIDENT OVERVIEW</div>'+
       '<div class="cds-body">'+
         '<p>On <strong>Monday, May 27, 2024</strong>, at approximately <strong>14:22 hours</strong>, Palm Beach County Sheriff\'s Office dispatch received multiple calls from members of the public reporting a severely intoxicated male subject behaving in a disorderly and aggressive manner at a public beach access area within unincorporated Palm Beach County, Florida. The subject was reported to be shouting at other beachgoers, refusing to vacate the public area, and exhibiting signs of extreme intoxication including impaired coordination, slurred speech, and erratic behavior.</p>'+
@@ -972,7 +972,7 @@ function buildCaseDocHTML(e) {
         '<p>This incident report documents the events, officer actions, subject behavior, charges filed, and subsequent processing of the individual. This report is filed in compliance with <strong>Florida Statute &sect;316.066</strong> and in accordance with Palm Beach County Sheriff\'s Office General Order 5.1.7 governing the review and public release of Body-Worn Camera (BWC) footage.</p>'+
       '</div>'+
 
-      // ── SECTION II ──
+      // -- SECTION II --
       '<div class="cds-head"><span class="cds-num">SECTION II.</span> SUBJECT / ARRESTEE INFORMATION</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-field-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -988,7 +988,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note"><strong>NOTE:</strong> Per PBSO Records Management Policy and F.S. 119.07(4)(d), personally identifying information for this subject has been partially redacted pending completion of criminal proceedings. Full unredacted arrest affidavit is on file with the Palm Beach County Clerk of Court and available upon submission of a formal public records request to the PBSO Records Division.</p>'+
       '</div>'+
 
-      // ── SECTION III ──
+      // -- SECTION III --
       '<div class="cds-head"><span class="cds-num">SECTION III.</span> RESPONDING UNITS &amp; OFFICERS OF RECORD</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-field-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1001,7 +1001,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note"><strong>NOTE:</strong> Officer identifying information (full name, badge number, personal identifiers) is redacted per PBSO Policy 12-04 (Officer Privacy in Public Records) and consistent with officer safety provisions under Florida law. All officers involved have been identified in the internal investigative file. BWC footage was recorded by the primary responding deputy using an agency-issued Axon Body 3 device.</p>'+
       '</div>'+
 
-      // ── SECTION IV ──
+      // -- SECTION IV --
       '<div class="cds-head"><span class="cds-num">SECTION IV.</span> CHRONOLOGICAL TIMELINE OF EVENTS</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-timeline" cellpadding="0" cellspacing="0" border="0">'+
@@ -1021,7 +1021,7 @@ function buildCaseDocHTML(e) {
         '</table>'+
       '</div>'+
 
-      // ── SECTION V ──
+      // -- SECTION V --
       '<div class="cds-head"><span class="cds-num">SECTION V.</span> USE OF FORCE DOCUMENTATION</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-field-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1035,7 +1035,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note">All use of force in this incident was captured on Body-Worn Camera. The reviewing supervisor determined that the force applied was the minimum necessary to effect the lawful arrest of the non-compliant subject and was consistent with PBSO Use of Force Policy 10.1.2 and Florida law.</p>'+
       '</div>'+
 
-      // ── SECTION VI ──
+      // -- SECTION VI --
       '<div class="cds-head"><span class="cds-num">SECTION VI.</span> MEDICAL EVALUATION &mdash; PALM BEACH COUNTY FIRE RESCUE</div>'+
       '<div class="cds-body">'+
         '<p>At the request of the on-scene patrol supervisor, Palm Beach County Fire Rescue was dispatched to the scene as a precautionary measure during the period in which the subject was in the ocean surf. Upon arrival, Fire Rescue personnel conducted a full field evaluation of the subject following his apprehension.</p>'+
@@ -1045,7 +1045,7 @@ function buildCaseDocHTML(e) {
         '<p><strong>Fire Rescue Report No.:</strong> PBCFR-2024-052700-MED-001 &mdash; On file with PBSO and Palm Beach County Fire Rescue District Records.</p>'+
       '</div>'+
 
-      // ── SECTION VII ──
+      // -- SECTION VII --
       '<div class="cds-head"><span class="cds-num">SECTION VII.</span> CRIMINAL CHARGES FILED</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-charge-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1059,7 +1059,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note"><strong>PROSECUTOR NOTE:</strong> This case was referred to the <strong>Palm Beach County State Attorney\'s Office, 15th Judicial Circuit</strong> for filing determination. Case status as of date of this record: ACTIVE &mdash; PENDING PROSECUTION. All case updates beyond the scope of this footage record must be obtained from the Clerk of Court, Palm Beach County, Florida.</p>'+
       '</div>'+
 
-      // ── SECTION VIII ──
+      // -- SECTION VIII --
       '<div class="cds-head"><span class="cds-num">SECTION VIII.</span> CIVILIAN WITNESS ACCOUNTS</div>'+
       '<div class="cds-body">'+
         '<p>At the time of the incident, a significant number of civilians were present on the public beach and observed all or portions of the events described in this report. Statements were collected from witnesses on scene by responding deputies. Full unredacted witness statements are on file with PBSO Investigations and are withheld from this public release to protect the privacy of civilian witnesses per F.S. 119.07(4).</p>'+
@@ -1069,7 +1069,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note">Total of seven (7) civilian witness statements collected on scene. All seven (7) witnesses corroborated the account of the responding deputies. No witness expressed any complaint regarding the conduct or level of force used by PBSO deputies. The applause observed and recorded on BWC footage at the time of arrest has been independently confirmed by four (4) separate witnesses.</p>'+
       '</div>'+
 
-      // ── SECTION IX ──
+      // -- SECTION IX --
       '<div class="cds-head"><span class="cds-num">SECTION IX.</span> EVIDENCE &amp; EXHIBITS</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-field-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1086,7 +1086,7 @@ function buildCaseDocHTML(e) {
         '</table>'+
       '</div>'+
 
-      // ── SECTION X ──
+      // -- SECTION X --
       '<div class="cds-head"><span class="cds-num">SECTION X.</span> CUSTODIAL PROCESSING &amp; DISPOSITION</div>'+
       '<div class="cds-body">'+
         '<p>Following medical clearance by Palm Beach County Fire Rescue, the subject was transported without incident to the <strong>Palm Beach County Main Detention Center</strong> located at 3228 Gun Club Road, West Palm Beach, Florida 33406. Upon arrival at the detention facility, the subject was processed through standard booking procedures which included:</p>'+
@@ -1103,7 +1103,7 @@ function buildCaseDocHTML(e) {
         '<p><strong>Current Case Status:</strong> As of date of this public records document, the case is under active review by the <strong>Palm Beach County State Attorney\'s Office, 15th Judicial Circuit</strong>. Further case updates, plea records, or adjudication outcomes are matters of public record and may be obtained directly from the Palm Beach County Clerk of Court. PAFA does not track post-arrest case disposition and does not represent or guarantee the accuracy of any case outcome information beyond the scope of this footage record.</p>'+
       '</div>'+
 
-      // ── SECTION XI ──
+      // -- SECTION XI --
       '<div class="cds-head"><span class="cds-num">SECTION XI.</span> BODY-WORN CAMERA FOOTAGE &mdash; PUBLIC RELEASE AUTHORIZATION</div>'+
       '<div class="cds-body">'+
         '<p>This footage was reviewed by the <strong>PBSO Office of Professional Standards</strong> and the <strong>PBSO Records and Evidence Division</strong> prior to public release. The footage was processed in accordance with the following standards and legal authorities:</p>'+
@@ -1116,7 +1116,7 @@ function buildCaseDocHTML(e) {
         '<p class="case-doc-note"><strong>PAFA ARCHIVE NOTICE:</strong> This footage has been archived by the Public Accountability Footage Archive (PAFA) for purposes of public record preservation and law enforcement transparency documentation. PAFA is a non-profit archival project. This footage is not monetized. No revenue is derived from the hosting or distribution of this record. This link is subject to server-side deletion to conserve archive storage capacity. Members of the public are encouraged to download and preserve this footage independently.</p>'+
       '</div>'+
 
-      // ── SECTION XII ──
+      // -- SECTION XII --
       '<div class="cds-head"><span class="cds-num">SECTION XII.</span> SUPERVISOR REVIEW &amp; APPROVAL RECORD</div>'+
       '<div class="cds-body">'+
         '<table class="case-doc-field-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1128,7 +1128,7 @@ function buildCaseDocHTML(e) {
         '</table>'+
       '</div>'+
 
-      // ── Certification footer ──
+      // -- Certification footer --
       '<div class="case-doc-certification">'+
         '<div class="case-doc-cert-title">CERTIFICATION OF RECORD</div>'+
         '<p>I hereby certify that this document constitutes an accurate summary of the events and findings documented in PBSO Case No. ' + caseNo + ', Incident No. ' + incNo + ', as recorded by responding deputies and reviewing supervisors of the Palm Beach County Sheriff\'s Office on May 27&ndash;28, 2024. All information contained herein is sourced from official agency records including Body-Worn Camera footage, Computer Aided Dispatch logs, officer narratives, Fire Rescue reports, and civilian witness statements. This document has been released pursuant to Florida Public Records Law, Chapter 119, Florida Statutes.</p>'+
@@ -1369,7 +1369,7 @@ function loadHomePage() {
 
   var html = '';
 
-  // Show fake/archived entries only on homepage (index 0 is real footage — accessible at record.html only)
+  // Show fake/archived entries only on homepage (index 0 is real footage � accessible at record.html only)
   PINNED_ENTRIES.slice(1).forEach(function(pe) {
     html += buildPinnedEntryHTML(pe);
   });
