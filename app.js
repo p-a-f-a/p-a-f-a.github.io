@@ -599,10 +599,11 @@ function injectModalDOM() {
 
           '<div id="pafa-modal-player" style="display:none;">'+
             '<div id="pafa-modal-clip-label"></div>'+
-            '<div id="pafa-modal-iframe-wrap">'+
+            '<div id="pafa-modal-iframe-wrap" style="position:relative;">'+
               '<iframe id="pafa-modal-iframe" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen style="width:100%;height:100%;border:0;"></iframe>'+
+              '<div style="position:absolute;bottom:0;right:0;width:100px;height:42px;z-index:10;background:transparent;cursor:default;" title=""></div>'+
             '</div>'+
-            '<div style="text-align:center;margin-top:8px;">'+
+            '<div style="text-align:center;margin-top:8px;">'+ 
               '<button onclick="modalClose()" style="font-family:Arial,sans-serif;font-size:11px;background:#003366;color:#fff;border:none;padding:5px 18px;cursor:pointer;">&#10005; CLOSE VIDEO</button>'+
               '&nbsp;&nbsp;<a href="index.html#donate-section" onclick="modalClose();" style="font-family:Arial,sans-serif;font-size:11px;color:#883300;font-weight:bold;">&#9829; Donate to PAFA</a>'+
             '</div>'+
@@ -759,10 +760,10 @@ function modalProceed() {
     var embedUrl = url;
     if (url.indexOf('player.vimeo.com') === -1) {
       var m = url.match(/vimeo\.com\/(?:video\/)?([0-9]+)/);
-      if (m) embedUrl = 'https://player.vimeo.com/video/' + m[1] + '?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1';
+      if (m) embedUrl = 'https://player.vimeo.com/video/' + m[1] + '?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&dnt=1';
     } else {
       embedUrl = embedUrl.replace(/[?&]autoplay=\d/, '');
-      embedUrl += (embedUrl.indexOf('?') !== -1 ? '&' : '?') + 'autoplay=1';
+      embedUrl += (embedUrl.indexOf('?') !== -1 ? '&' : '?') + 'autoplay=1&title=0&byline=0&portrait=0&dnt=1';
     }
     if (iframe) iframe.src = embedUrl;
   } else {
